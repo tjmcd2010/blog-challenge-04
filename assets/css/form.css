@@ -1,0 +1,67 @@
+
+
+ /*This is the square image on the log-in page that shows "my first blog"*/
+  .square {
+    width: 500px;
+    height: 500px;
+    line-height: 500px;
+    border-radius: 50px;
+    font-size: 50px;
+    color: orange;
+    text-align: center;
+    background: black;
+    padding: 20px;
+    margin: 40px;
+
+  }
+  .clearfix::after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+  .card {
+    background-color: black;
+    border: 1px solid #eceff1;
+    border-radius: 8px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0 1px 2px 0,
+      rgba(60, 64, 67, 0.15) 0 1px 3px 1px;
+    margin: 2%;
+    margin-top: 10px;
+    padding: 20px;
+    width: 46%;
+    overflow: hidden;
+    position: relative;
+    float: right;
+  }
+  
+  .card::after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+  .input-group {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  #msg {
+    visibility: hidden;
+    margin-top: 20px;
+    font-weight: 700;
+    height: 1.2em;
+    font-size: 1.2em;
+  }
+  
+  #msg.success,
+  #msg.error {
+    visibility: visible;
+  }
+  
+  #msg.success {
+    color: #001b44;;
+  }
+  
+  #msg.error {
+    color: #e6252c;
+  }
+  
+
