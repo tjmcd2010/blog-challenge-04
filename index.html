@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/form.css" />
+   
+
+    <title>Document</title>
+
+</head>
+
+<body>
+    <form>
+        <input type="button" value=" 🌞 🌚" onclick="toggleDarkMode()"> </button>
+       </form>
+    <form>
+    <div class="clearfix">
+      <div class="card">
+        <h2>What's on your mind?</h2>
+        <form method="POST">
+            <div class="row">
+                <div class="col-8 col-sm-4">
+            <label for="username">Username</label>
+            <input type="text" name="usermane" id="username" placeholder="Enter Username" />
+        </div> </div><br>
+          <div class="row">
+            <div class="col-8 col-sm-4">
+            <label for="title">Blog Title</label>
+            <input type="text" name="title" id="title" placeholder="Enter Blog Title" />
+          </div> </div><br>
+          <div class="row">
+            <div class="col-8 col-sm-4">
+            <label for="blog">My Blog</label>
+           <textarea name="blog" id="blog" placeholder="Enter Blog Here" rows="5" cols="30"></textarea>
+          </div> </div>
+          <div id="msg"></div>
+          <button type="submit" 
+          class="btn btn-outline-success btn-lg shadow" 
+          onClick="auth(event)">Submit</button>
+         
+      </div>
+
+     <div class="square">My First Blog</div>  
+    </div>
+
+    
+</form>
+
+
+
+   <script src="assets/js/form.js"></script>
+   <script src="assets/js/logic.js"></script>
+</body>
+</html>
