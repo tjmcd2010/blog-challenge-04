@@ -3,19 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/blog.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/styles.css"/>
+   
 
-    <title>Document</title>
-    
+    <title>My First Blog</title>
+
 </head>
+
 <body>
- <h1> My First Blog </h1>
- <form><input type="button" value="Go back!" onclick="history.back()">
-  <input type="button" value=" 🌞 🌚" onclick="toggleDarkMode()"> </button>
-   </form>
-     
-   <script src="assets/js/blog.js"></script>
-   <script src="assets/js/logic.js"></script>
-</body>
-</html>
+    <div class="container dark">
+       <div class ="back"> <input type="button" value="Create another blog!"" onclick="history.back()"></div>
+        <div class="row toggle">
+          <div class="col">
+            <p id="emoji"><span class="emoji">🌚</span></p>
+          </div>
+          <label class="switch col">
+            <input type="checkbox" id="theme-switcher">
+            <span class="slider round"></span>
+          </label>
+          <div class="col">
+            <p id="emoji"><span class="emoji">🌞</span></p>
+          </div>
+        </div>
+        <div class="row">
+          <h1>My First Blog</h1>
+        </div>
+        <div class="row">
+          <div>
+            <p>We use the .addEventListener() method to set up an element to listen for a specific event</p>
+            <p id= "light-mode">When we switch the slider to "Light Mode", the background is changed to a light color.</p>
+            <p id = "dark-mode">When we switch the slider to "Dark Mode", the background is changed to a dark color.</p>
+          </div>
+         
+        </div>
+      </div>
+      <div class="footer">
+        <p>Visit my  <a href="https://github.com/tjmcd2010/"> portfolio</a> for more designs</p>
+        
+        </div>
+
+    <script src="assets/js/blog.js"></script>
+    <script src="assets/js/logic.js"></script>
+ </body>
+ </html>  

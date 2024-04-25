@@ -1,17 +1,16 @@
-
-
- /*This is the square image on the log-in page that shows "my first blog"*/
-  .square {
-    width: 500px;
-    height: 500px;
-    line-height: 500px;
-    border-radius: 50px;
+/*This is the square image on the log-in page that shows "my first blog"*/
+.circle {
+    width: 450px;
+    height: 450px;
+    display: table-cell;
+    border-radius: 1000px;
+    vertical-align: middle;
     font-size: 50px;
-    color: orange;
+    color: rgb(174, 180, 20);
     text-align: center;
-    background: black;
-    padding: 20px;
-    margin: 40px;
+    background: rgb(17, 161, 70);
+    max-width: 100%;
+    max-height: 768px;
 
   }
   .clearfix::after {
@@ -19,8 +18,39 @@
     display: block;
     clear: both;
   }
+
+/* the following help format the questions in the form. */
+form {
+    max-width: 400px;
+  }
+  
+  form h3 {
+    font-size: 150%;
+  }
+  
+  form p {
+    margin: 3% 0;
+  }
+  
+  label {
+    display: block;
+  }
+  
+  button {
+    padding: 1% 2%;
+    color: #fff;
+    background-color: #13293d;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  .clearfix::after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
   .card {
-    background-color: blue;
+    background-color: rgb(130, 130, 229);
     border: 1px solid #eceff1;
     border-radius: 8px;
     box-shadow: rgba(60, 64, 67, 0.3) 0 1px 2px 0,
@@ -30,9 +60,9 @@
     padding: 20px;
     width: 46%;
     overflow: hidden;
-    position: relative;
     float: right;
-    max-height: 768px;
+    max-width: 768px;
+    justify-content: center;
   }
   
   .card::after {
@@ -40,29 +70,19 @@
     display: block;
     clear: both;
   }
-  .input-group {
-    margin-top: 10px;
-    margin-bottom: 10px;
+/* Utilized aside to have a for styling and separating sections */
+aside {
+    flex: 1;
+    padding: 30px;
+    text-align: start;
+    float: left
   }
-  #msg {
-    visibility: hidden;
-    margin-top: 20px;
-    font-weight: 700;
-    height: 1.2em;
-    font-size: 1.2em;
-  }
-  
-  #msg.success,
-  #msg.error {
-    visibility: visible;
-  }
-  
-  #msg.success {
-    color: #001b44;;
-  }
-  
-  #msg.error {
-    color: #e6252c;
-  }
-  
-
+  @media screen and (min-width: 640px) {
+    .col-sm-auto {
+      flex-grow: 1;
+      flex-basis: 0;
+    }
+    .col-8 {
+        flex: 0 0 66.66667%;
+        max-width: 66.66667%;
+      }
