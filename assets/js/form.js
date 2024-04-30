@@ -20,8 +20,14 @@ submit.addEventListener("click", function (event) {
             data.push(userInput);
             localStorage.setItem("data", JSON.stringify(data));
          
-            window.location.href = "blog.html";
+            window.location.href = "blog.html" 
+            //clears username, title and blog from submission form fields 
+            document.getElementById("username").value = "";
+            document.getElementById("title").value = "";
+            document.getElementById("blog").value = "";
         }else{
     window.alert("Please fill all the fields");
 };}
 )
+
+
