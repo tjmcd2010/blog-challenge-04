@@ -1,13 +1,19 @@
+// Retrieves values stored in local storage to display the "data"
+const data = JSON.parse(localStorage.getItem('data')) || [];
+const blogs = document.getElementById('blogs');
 
-//display all local storage entries into blog.html in a loop. capture username, title, and blog and place them on the page in order of entry
-function displayBlog() { 
-    let username = localStorage.getItem("username");
-    let title = localStorage.getItem("title");
-    let blog = localStorage.getItem("blog");
-    let blogEntry = document.createElement("div");
-    blogEntry.innerHTML = username + " wrote " + title + ": " + blog;
-    document.body.appendChild(blogEntry);
-}
+
+// finds all information in "data" and displays it in its own box on the page
+data.forEach(blog => {
+    const blogElement = document.createElement('article');
+    blogElement.id = 'blogs';
+    blogElement.innerHTML = `
+        <h2>${blog.title}</h2>
+        <p>${blog.blog}</p>
+        <h3>by: ${blog.username}</h3>
+    `;
+    blogs.appendChild(blogElement);
+})
 
 
 
