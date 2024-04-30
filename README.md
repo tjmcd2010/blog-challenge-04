@@ -54,6 +54,18 @@ THEN I am presented with a link to the developer's portfolio.✅
 
 ## Demonstrations and screenshot
 
+Live Screen Recording
 
+![Live Screen Recording](assets/Images/Blog-Challenge.gif)
 
-## Link to the live url: https://tjmcd2010.github.io/blog-challenge-04/
+Other Images
+
+![Blog Dark Mode](assets/Images/Blog-Dark.png)
+![Blog Light Mode](assets/Images/Blog-Light.png)
+![Index Dark Mode](assets/Images/Index-Dark.png)
+![Index Light Mode](assets/Images/Index-Light.png)
+![Error Message](assets/Images/Error-Message.png)
+
+## Link to the live url:
+
+https://tjmcd2010.github.io/blog-challenge-04/
