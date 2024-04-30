@@ -31,7 +31,6 @@ span.emoji {
   /* Dark Mode */
   .dark {
     background-color:#243447;
-    height: 100vh;
     color: #bebebe
    
   }
@@ -48,7 +47,6 @@ span.emoji {
   .light {
     background-color: #f0ead6;
     color: black;
-    height: 100vh;
   }
   
   .light li a {
@@ -151,4 +149,4 @@ span.emoji {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
-  }
+  
