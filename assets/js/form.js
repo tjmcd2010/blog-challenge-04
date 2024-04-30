@@ -1,3 +1,5 @@
+
+
 const submit = document.getElementById("submit");
 
 let data = JSON.parse(localStorage.getItem("data")) === null ? [] : JSON.parse(localStorage.getItem("data"));
@@ -21,23 +23,5 @@ submit.addEventListener("click", function (event) {
             window.location.href = "blog.html";
         }else{
     window.alert("Please fill all the fields");
-};
-
-
-  const name = document.getElementById("name").value;
-  const email = document.getElementById("email").value;
-  const password = document.getElementById("password").value;
-  const confirmPassword = document.getElementById("confirmPassword").value;
-
-  if (password !== confirmPassword) {
-    alert("Passwords do not match");
-    return;
-  }
-
-  data.push({ name, email, password });
-  localStorage.setItem("data", JSON.stringify(data));
-
-  alert("Registration successful");
-});
-
-
+};}
+)
