@@ -1,8 +1,11 @@
-/* adds stylying for the back button */
-.back {
-    float: right;
-    font-size: x-large;
-}
+/*adds standard variables */
+:root {
+
+    --light-dark: #6f6866;
+    --dark: #38302e;
+    --border-radius: .3rem;
+  }
+
 /* Adds styling to the blogs ID element */
 #blogs {
     box-sizing: border-box;
@@ -17,3 +20,28 @@ background-color: blue;
 a{
     color: gray;
 }
+/* adds stylying for the back button */
+.btn-back {
+    border-radius: .3rem;
+    color: #ccdad1; 
+    border: none;
+    outline: none;
+    background-color: #6f6866; 
+    box-shadow: 3px 3px lightgray;
+    transform: translate(-1px, -1px);
+    display: inline-block;
+    width: auto;
+    margin-top: 20px;
+    margin-right: 15px;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    float: right;
+  }
+  
+   .btn-back:hover {
+    color: #ccdad1 ; 
+    background-color: #788585; 
+    transform: translate(0, 0);
+    box-shadow: 2px 2px #38302e; 
+  }
